@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Chopsticks -->
+  <line x1="82" y1="10" x2="72" y2="78" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+  <line x1="118" y1="10" x2="108" y2="78" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+  <!-- Noodles hanging from chopsticks -->
+  <path d="M74 76 Q80 68 88 72 Q96 76 90 82" stroke="#111" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M106 76 Q112 68 104 72 Q96 76 98 84" stroke="#111" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Bowl outer -->
+  <path d="M28 108 Q30 170 100 178 Q170 170 172 108 Z" fill="#111"/>
+  <!-- Bowl inner (lighter) -->
+  <path d="M38 108 Q40 162 100 170 Q160 162 162 108 Z" fill="#333"/>
+  <!-- Noodle loops in bowl -->
+  <path d="M50 118 Q65 108 80 118 Q95 128 110 118 Q125 108 140 118" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <path d="M45 130 Q62 120 78 130 Q94 140 110 130 Q126 120 145 130" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <path d="M50 142 Q65 132 82 142 Q99 152 116 142 Q133 132 148 142" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M58 153 Q72 144 88 153 Q104 162 118 154 Q132 146 144 153" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <!-- Bowl rim -->
+  <ellipse cx="100" cy="108" rx="72" ry="14" fill="#111"/>
+  <ellipse cx="100" cy="108" rx="66" ry="10" fill="#444"/>
+  <!-- Bowl base -->
+  <ellipse cx="100" cy="175" rx="28" ry="6" fill="#111"/>
+</svg>

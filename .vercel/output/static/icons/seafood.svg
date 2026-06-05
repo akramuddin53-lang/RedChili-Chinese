@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Main body shell -->
+  <path d="M100 90 Q130 75 148 90 Q155 110 145 128 Q130 145 100 148 Q70 145 55 128 Q45 110 52 90 Q70 75 100 90 Z" fill="#222"/>
+  <!-- Body shading detail -->
+  <path d="M75 100 Q100 95 125 100 Q130 115 125 128 Q100 135 75 128 Q70 115 75 100 Z" fill="#444"/>
+  <!-- Shell texture dots -->
+  <circle cx="90" cy="108" r="2" fill="#222"/><circle cx="100" cy="105" r="2" fill="#222"/><circle cx="110" cy="108" r="2" fill="#222"/>
+  <circle cx="95" cy="118" r="2" fill="#222"/><circle cx="105" cy="120" r="2" fill="#222"/>
+  <!-- Head bumps -->
+  <circle cx="90" cy="87" r="5" fill="#222"/>
+  <circle cx="110" cy="87" r="5" fill="#222"/>
+  <!-- Rostrum / face plate -->
+  <path d="M80 88 Q100 80 120 88 Q118 92 100 90 Q82 92 80 88 Z" fill="#333"/>
+  <!-- Left big claw -->
+  <path d="M52 90 Q30 75 18 60 Q22 52 30 55 Q38 58 45 70 Q40 58 46 50 Q56 46 60 55 Q64 65 55 75 Q52 82 52 90 Z" fill="#222"/>
+  <!-- Left claw inner detail -->
+  <path d="M25 56 Q30 52 35 56" stroke="#555" stroke-width="1.5" fill="none"/>
+  <path d="M48 52 Q52 48 56 52" stroke="#555" stroke-width="1.5" fill="none"/>
+  <!-- Right big claw -->
+  <path d="M148 90 Q170 75 182 60 Q178 52 170 55 Q162 58 155 70 Q160 58 154 50 Q144 46 140 55 Q136 65 145 75 Q148 82 148 90 Z" fill="#222"/>
+  <!-- Right claw inner detail -->
+  <path d="M175 56 Q170 52 165 56" stroke="#555" stroke-width="1.5" fill="none"/>
+  <path d="M152 52 Q148 48 144 52" stroke="#555" stroke-width="1.5" fill="none"/>
+  <!-- Left walking legs -->
+  <path d="M60 100 Q40 92 25 80" stroke="#222" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M58 112 Q36 108 20 100" stroke="#222" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M60 124 Q40 124 26 120" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M65 134 Q52 138 42 140" stroke="#222" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Right walking legs -->
+  <path d="M140 100 Q160 92 175 80" stroke="#222" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M142 112 Q164 108 180 100" stroke="#222" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M140 124 Q160 124 174 120" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M135 134 Q148 138 158 140" stroke="#222" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+</svg>

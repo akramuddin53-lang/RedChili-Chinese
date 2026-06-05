@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" fill="none">
+  <!-- Pizza slice outline/crust back -->
+  <path d="M20 155 L100 18 L180 155 Z" fill="#ddd" stroke="#aaa" stroke-width="3"/>
+  <!-- Crust edge highlight -->
+  <path d="M20 155 Q40 168 100 170 Q160 168 180 155" fill="#bbb" stroke="#aaa" stroke-width="2"/>
+  <!-- Cheese layer -->
+  <path d="M32 148 L100 30 L168 148 Z" fill="white" stroke="#ccc" stroke-width="1.5"/>
+  <!-- Outer crust thickness shadow -->
+  <path d="M20 155 Q100 175 180 155 Q160 162 100 164 Q40 162 20 155 Z" fill="#aaa"/>
+  <!-- Toppings - mushroom shapes -->
+  <ellipse cx="100" cy="120" rx="14" ry="10" fill="#aaa" stroke="#888" stroke-width="1.5"/>
+  <path d="M86 120 Q100 112 114 120" fill="#ccc" stroke="none"/>
+  <rect x="97" y="120" width="6" height="8" rx="2" fill="#999"/>
+  <!-- Onion ring left -->
+  <ellipse cx="68" cy="108" rx="10" ry="7" fill="none" stroke="#888" stroke-width="2.5"/>
+  <ellipse cx="68" cy="108" rx="6" ry="4" fill="none" stroke="#aaa" stroke-width="1.5"/>
+  <!-- Onion ring right -->
+  <ellipse cx="132" cy="108" rx="10" ry="7" fill="none" stroke="#888" stroke-width="2.5"/>
+  <ellipse cx="132" cy="108" rx="6" ry="4" fill="none" stroke="#aaa" stroke-width="1.5"/>
+  <!-- Small mushroom bottom left -->
+  <ellipse cx="78" cy="138" rx="11" ry="8" fill="#bbb" stroke="#888" stroke-width="1.5"/>
+  <path d="M67 138 Q78 131 89 138" fill="#ccc"/>
+  <rect x="75" y="138" width="5" height="7" rx="1.5" fill="#999"/>
+  <!-- Pepper dots scattered -->
+  <circle cx="55" cy="125" r="3.5" fill="#888"/>
+  <circle cx="118" cy="98" r="3" fill="#888"/>
+  <circle cx="88" cy="85" r="2.5" fill="#888"/>
+  <circle cx="148" cy="130" r="3" fill="#888"/>
+  <circle cx="110" cy="142" r="2.5" fill="#888"/>
+  <circle cx="62" cy="142" r="2.5" fill="#888"/>
+  <!-- Slice edge lines -->
+  <line x1="100" y1="18" x2="20" y2="155" stroke="#999" stroke-width="1" opacity="0.5"/>
+  <line x1="100" y1="18" x2="180" y2="155" stroke="#999" stroke-width="1" opacity="0.5"/>
+</svg>

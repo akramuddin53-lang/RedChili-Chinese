@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140" fill="none">
+  <!-- Body -->
+  <ellipse cx="90" cy="75" rx="62" ry="38" fill="#111"/>
+  <!-- Tail fin -->
+  <path d="M152 75 L185 45 L185 105 Z" fill="#111"/>
+  <!-- Top fin -->
+  <path d="M75 37 Q90 20 110 28 Q100 37 90 37 Z" fill="#111"/>
+  <!-- Bottom fin -->
+  <path d="M80 113 Q90 125 100 118 Q95 112 88 113 Z" fill="#111"/>
+  <!-- Pectoral fin -->
+  <path d="M72 82 Q80 100 95 95 Q88 84 78 84 Z" fill="white" opacity="0.85"/>
+  <!-- Body highlight lines -->
+  <path d="M95 42 Q110 55 108 95" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M108 42 Q124 55 122 93" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M120 46 Q136 58 134 92" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Eye -->
+  <circle cx="55" cy="68" r="9" fill="white"/>
+  <circle cx="55" cy="68" r="5" fill="#111"/>
+  <circle cx="53" cy="66" r="2" fill="white"/>
+  <!-- Mouth -->
+  <path d="M28 73 Q32 78 28 83" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Bowl outer -->
+  <path d="M28 105 Q30 168 100 176 Q170 168 172 105 Z" fill="#111"/>
+  <!-- Bowl inner -->
+  <path d="M38 105 Q40 160 100 168 Q160 160 162 105 Z" fill="#333"/>
+  <!-- Rice grain texture - scattered white ovals -->
+  <ellipse cx="68" cy="120" rx="7" ry="4" fill="white" transform="rotate(-20 68 120)" opacity="0.9"/>
+  <ellipse cx="85" cy="115" rx="7" ry="4" fill="white" transform="rotate(10 85 115)" opacity="0.9"/>
+  <ellipse cx="100" cy="118" rx="7" ry="4" fill="white" transform="rotate(-5 100 118)" opacity="0.9"/>
+  <ellipse cx="116" cy="114" rx="7" ry="4" fill="white" transform="rotate(15 116 114)" opacity="0.9"/>
+  <ellipse cx="132" cy="120" rx="7" ry="4" fill="white" transform="rotate(-10 132 120)" opacity="0.9"/>
+  <ellipse cx="58" cy="132" rx="7" ry="4" fill="white" transform="rotate(5 58 132)" opacity="0.9"/>
+  <ellipse cx="75" cy="128" rx="7" ry="4" fill="white" transform="rotate(-15 75 128)" opacity="0.9"/>
+  <ellipse cx="92" cy="130" rx="7" ry="4" fill="white" transform="rotate(8 92 130)" opacity="0.9"/>
+  <ellipse cx="108" cy="127" rx="7" ry="4" fill="white" transform="rotate(-12 108 127)" opacity="0.9"/>
+  <ellipse cx="124" cy="132" rx="7" ry="4" fill="white" transform="rotate(20 124 132)" opacity="0.9"/>
+  <ellipse cx="142" cy="128" rx="6" ry="3.5" fill="white" transform="rotate(-8 142 128)" opacity="0.85"/>
+  <ellipse cx="65" cy="145" rx="7" ry="4" fill="white" transform="rotate(12 65 145)" opacity="0.85"/>
+  <ellipse cx="82" cy="142" rx="7" ry="4" fill="white" transform="rotate(-18 82 142)" opacity="0.85"/>
+  <ellipse cx="100" cy="143" rx="7" ry="4" fill="white" transform="rotate(5 100 143)" opacity="0.85"/>
+  <ellipse cx="117" cy="141" rx="7" ry="4" fill="white" transform="rotate(-10 117 141)" opacity="0.85"/>
+  <ellipse cx="133" cy="145" rx="6.5" ry="3.5" fill="white" transform="rotate(14 133 145)" opacity="0.85"/>
+  <ellipse cx="75" cy="156" rx="6.5" ry="3.5" fill="white" transform="rotate(-8 75 156)" opacity="0.8"/>
+  <ellipse cx="92" cy="155" rx="6.5" ry="3.5" fill="white" transform="rotate(10 92 155)" opacity="0.8"/>
+  <ellipse cx="108" cy="156" rx="6.5" ry="3.5" fill="white" transform="rotate(-5 108 156)" opacity="0.8"/>
+  <ellipse cx="124" cy="154" rx="6" ry="3" fill="white" transform="rotate(18 124 154)" opacity="0.8"/>
+  <!-- Bowl rim -->
+  <ellipse cx="100" cy="105" rx="72" ry="14" fill="#111"/>
+  <ellipse cx="100" cy="105" rx="66" ry="10" fill="#444"/>
+  <!-- Steam wisps -->
+  <path d="M80 90 Q76 80 80 70 Q84 60 80 50" stroke="#111" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M100 88 Q96 76 100 64 Q104 52 100 42" stroke="#111" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M120 90 Q116 80 120 70 Q124 60 120 50" stroke="#111" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Bowl base -->
+  <ellipse cx="100" cy="173" rx="28" ry="6" fill="#111"/>
+</svg>
