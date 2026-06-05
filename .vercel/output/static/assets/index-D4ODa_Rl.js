@@ -1,0 +1,1 @@
+import{j as t}from"./index-CDMVERaz.js";function r(){return t.jsx("iframe",{src:"/restaurant.html",title:"Red Chili Restaurant",style:{border:0,width:"100vw",height:"100vh",display:"block"}})}export{r as component};
