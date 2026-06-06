@@ -1015,68 +1015,22 @@
 
 <div class="spacer"></div>
 
-<!-- MENU MODAL -->
-<div id="menuModal" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.95);">
-  <div style="display:flex;flex-direction:column;height:100%;max-width:900px;margin:0 auto;">
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid rgba(201,168,76,0.3);background:var(--darker);">
-      <span style="font-family:'Playfair Display',serif;color:var(--gold);font-size:1.1rem;">Our Menu</span>
-      <span id="menuPageLabel" style="color:#aaa;font-size:0.85rem;">1 / 8</span>
-      <span onclick="closeModal('menuModal')" style="color:#aaa;font-size:1.8rem;cursor:pointer;line-height:1;">×</span>
-    </div>
-    <div style="flex:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:0;">
-      <div id="menuPagesTrack" style="display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;"></div>
-      <button onclick="menuNav(-1)" aria-label="Previous" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);background:rgba(201,168,76,0.9);color:#000;border:0;width:44px;height:44px;border-radius:50%;font-size:1.6rem;cursor:pointer;font-weight:700;line-height:1;">‹</button>
-      <button onclick="menuNav(1)" aria-label="Next" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:rgba(201,168,76,0.9);color:#000;border:0;width:44px;height:44px;border-radius:50%;font-size:1.6rem;cursor:pointer;font-weight:700;line-height:1;">›</button>
-    </div>
-    <div id="menuDots" style="display:flex;gap:6px;justify-content:center;padding:12px;background:var(--darker);border-top:1px solid rgba(201,168,76,0.2);"></div>
+<!-- MENU MODAL (simple stacked images) -->
+<div id="menuModal" style="display:none;position:fixed;inset:0;z-index:200;background:#fff;overflow-y:auto;-webkit-overflow-scrolling:touch;">
+  <button onclick="closeModal('menuModal')" aria-label="Back" style="position:fixed;top:12px;left:12px;z-index:210;background:#fff;border:1px solid #ddd;border-radius:999px;padding:8px 14px 8px 10px;font-size:0.9rem;font-weight:600;color:#222;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.15);display:inline-flex;align-items:center;gap:6px;">
+    <span style="font-size:1.2rem;line-height:1;">‹</span> Back
+  </button>
+  <div style="display:flex;flex-direction:column;width:100%;padding-top:56px;">
+    <img src="/menu/menu1.jpg" alt="Soup & Appetizer" style="width:100%;height:auto;display:block;">
+    <img src="/menu/menu2.jpg" alt="Salad & Rice" style="width:100%;height:auto;display:block;">
+    <img src="/menu/menu3.jpg" alt="Chicken & Beef" style="width:100%;height:auto;display:block;">
+    <img src="/menu/menu4.jpg" alt="Prawn, Fish, Seafood & Crab" style="width:100%;height:auto;display:block;">
+    <img src="/menu/menu5.jpg" alt="Vegetable, Chowmein, Chopsey, Noodles, Bangla Food, Pizza & Pasta" style="width:100%;height:auto;display:block;">
+    <img src="/menu/menu6.jpg" alt="Combo Express" style="width:100%;height:auto;display:block;">
+    <img src="/menu/menu7.jpg" alt="Set Meals" style="width:100%;height:auto;display:block;">
+    <img src="/menu/menu8.jpg" alt="Beverage & Dessert" style="width:100%;height:auto;display:block;">
   </div>
 </div>
-<script>
-  (function(){
-    var pages = [
-      "/menu/menu1.jpg",
-      "/menu/menu2.jpg",
-      "/menu/menu3.jpg",
-      "/menu/menu4.jpg",
-      "/menu/menu5.jpg",
-      "/menu/menu6.jpg",
-      "/menu/menu7.jpg",
-      "/menu/menu8.jpg"
-    ];
-    var track = document.getElementById('menuPagesTrack');
-    var dots = document.getElementById('menuDots');
-    var label = document.getElementById('menuPageLabel');
-    pages.forEach(function(src, i){
-      var slide = document.createElement('div');
-      slide.style.cssText = 'flex:0 0 100%;height:100%;scroll-snap-align:center;display:flex;align-items:center;justify-content:center;padding:10px;box-sizing:border-box;';
-      slide.innerHTML = '<img src="'+src+'" alt="Menu page '+(i+1)+'" style="max-width:100%;max-height:100%;object-fit:contain;border-radius:6px;box-shadow:0 8px 30px rgba(0,0,0,0.5);">';
-      track.appendChild(slide);
-      var d = document.createElement('span');
-      d.style.cssText = 'width:8px;height:8px;border-radius:50%;background:rgba(201,168,76,0.3);cursor:pointer;transition:background 0.2s;';
-      d.onclick = function(){ goToMenuPage(i); };
-      dots.appendChild(d);
-    });
-    function curIdx(){ return Math.round(track.scrollLeft / track.clientWidth); }
-    function updateUI(){
-      var i = curIdx();
-      label.textContent = (i+1) + ' / ' + pages.length;
-      Array.from(dots.children).forEach(function(d, idx){
-        d.style.background = idx === i ? 'var(--gold)' : 'rgba(201,168,76,0.3)';
-      });
-    }
-    function goToMenuPage(i){
-      i = Math.max(0, Math.min(pages.length-1, i));
-      track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
-      setTimeout(updateUI, 50);
-    }
-    window.menuNav = function(dir){ goToMenuPage(curIdx() + dir); };
-    track.addEventListener('scroll', function(){
-      clearTimeout(track._t);
-      track._t = setTimeout(updateUI, 80);
-    });
-    updateUI();
-  })();
-</script>
 
 <!-- LOCATION MODAL -->
 <div id="locationModal" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;">
